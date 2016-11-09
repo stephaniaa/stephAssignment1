@@ -13,13 +13,13 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QCalendarWidget>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QToolBar>
-#include <QtWidgets/QToolButton>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -29,7 +29,7 @@ class Ui_ATOassignmentMainWindow
 public:
     QWidget *centralWidget;
     QPushButton *pushButton;
-    QToolButton *toolButton;
+    QCalendarWidget *calendarWidget;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -43,10 +43,10 @@ public:
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         pushButton = new QPushButton(centralWidget);
         pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(250, 40, 75, 23));
-        toolButton = new QToolButton(centralWidget);
-        toolButton->setObjectName(QStringLiteral("toolButton"));
-        toolButton->setGeometry(QRect(120, 40, 25, 19));
+        pushButton->setGeometry(QRect(300, 30, 75, 23));
+        calendarWidget = new QCalendarWidget(centralWidget);
+        calendarWidget->setObjectName(QStringLiteral("calendarWidget"));
+        calendarWidget->setGeometry(QRect(30, 20, 256, 183));
         ATOassignmentMainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(ATOassignmentMainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -68,7 +68,6 @@ public:
     {
         ATOassignmentMainWindow->setWindowTitle(QApplication::translate("ATOassignmentMainWindow", "ATOassignmentMainWindow", 0));
         pushButton->setText(QApplication::translate("ATOassignmentMainWindow", "PushButton", 0));
-        toolButton->setText(QApplication::translate("ATOassignmentMainWindow", "...", 0));
     } // retranslateUi
 
 };

@@ -13,6 +13,7 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QCheckBox>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
@@ -30,6 +31,7 @@ public:
     QWidget *centralWidget;
     QPushButton *pushButton;
     QToolButton *toolButton;
+    QCheckBox *checkBox;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -47,10 +49,13 @@ public:
         toolButton = new QToolButton(centralWidget);
         toolButton->setObjectName(QStringLiteral("toolButton"));
         toolButton->setGeometry(QRect(120, 40, 25, 19));
+        checkBox = new QCheckBox(centralWidget);
+        checkBox->setObjectName(QStringLiteral("checkBox"));
+        checkBox->setGeometry(QRect(70, 120, 81, 20));
         ATOassignmentMainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(ATOassignmentMainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 400, 21));
+        menuBar->setGeometry(QRect(0, 0, 400, 26));
         ATOassignmentMainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(ATOassignmentMainWindow);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -69,6 +74,7 @@ public:
         ATOassignmentMainWindow->setWindowTitle(QApplication::translate("ATOassignmentMainWindow", "ATOassignmentMainWindow", 0));
         pushButton->setText(QApplication::translate("ATOassignmentMainWindow", "PushButton", 0));
         toolButton->setText(QApplication::translate("ATOassignmentMainWindow", "...", 0));
+        checkBox->setText(QApplication::translate("ATOassignmentMainWindow", "CheckBox", 0));
     } // retranslateUi
 
 };

@@ -1,6 +1,7 @@
 #include "atoassignmentmainwindow.h"
 #include "ui_atoassignmentmainwindow.h"
 #include "myobfilecontroller.h"
+#include "myoboutputdialog.h"
 
 ATOassignmentMainWindow::ATOassignmentMainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -17,5 +18,11 @@ ATOassignmentMainWindow::~ATOassignmentMainWindow()
 void ATOassignmentMainWindow::on_MYOBfilebutton_clicked()
 {
     MyobFileController myobfilecontroller;
-    myobfilecontroller.OpenMyobFile();
+    ifstream *myobfileptr = myobfilecontroller.OpenMyobFile();
+    MyobOutputDialog myoboutputdialog(this);
+
+    myoboutputdialog.setFilePtr(myobfileptr);
+    myoboutputdialog.displayText();
+    myoboutputdialog.exec();
+
 }

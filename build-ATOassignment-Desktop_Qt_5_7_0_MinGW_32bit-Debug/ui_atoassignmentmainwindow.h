@@ -13,7 +13,6 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
-#include <QtWidgets/QCalendarWidget>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
@@ -28,8 +27,7 @@ class Ui_ATOassignmentMainWindow
 {
 public:
     QWidget *centralWidget;
-    QPushButton *pushButton;
-    QCalendarWidget *calendarWidget;
+    QPushButton *MYOBfilebutton;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -41,12 +39,9 @@ public:
         ATOassignmentMainWindow->resize(400, 300);
         centralWidget = new QWidget(ATOassignmentMainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
-        pushButton = new QPushButton(centralWidget);
-        pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(300, 30, 75, 23));
-        calendarWidget = new QCalendarWidget(centralWidget);
-        calendarWidget->setObjectName(QStringLiteral("calendarWidget"));
-        calendarWidget->setGeometry(QRect(30, 20, 256, 183));
+        MYOBfilebutton = new QPushButton(centralWidget);
+        MYOBfilebutton->setObjectName(QStringLiteral("MYOBfilebutton"));
+        MYOBfilebutton->setGeometry(QRect(284, 30, 91, 21));
         ATOassignmentMainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(ATOassignmentMainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -67,7 +62,7 @@ public:
     void retranslateUi(QMainWindow *ATOassignmentMainWindow)
     {
         ATOassignmentMainWindow->setWindowTitle(QApplication::translate("ATOassignmentMainWindow", "ATOassignmentMainWindow", 0));
-        pushButton->setText(QApplication::translate("ATOassignmentMainWindow", "PushButton", 0));
+        MYOBfilebutton->setText(QApplication::translate("ATOassignmentMainWindow", "Open MYOB file", 0));
     } // retranslateUi
 
 };

@@ -13,8 +13,10 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        atoassignmentmainwindow.cpp
+        atoassignmentmainwindow.cpp \
+    myobfilecontroller.cpp
 
-HEADERS  += atoassignmentmainwindow.h
+HEADERS  += atoassignmentmainwindow.h \
+    myobfilecontroller.h
 
 FORMS    += atoassignmentmainwindow.ui

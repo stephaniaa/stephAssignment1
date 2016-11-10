@@ -1,5 +1,6 @@
 #include "atoassignmentmainwindow.h"
 #include "ui_atoassignmentmainwindow.h"
+#include "myobfilecontroller.h"
 
 ATOassignmentMainWindow::ATOassignmentMainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -11,4 +12,10 @@ ATOassignmentMainWindow::ATOassignmentMainWindow(QWidget *parent) :
 ATOassignmentMainWindow::~ATOassignmentMainWindow()
 {
     delete ui;
+}
+
+void ATOassignmentMainWindow::on_MYOBfilebutton_clicked()
+{
+    MyobFileController myobfilecontroller;
+    myobfilecontroller.OpenMyobFile();
 }

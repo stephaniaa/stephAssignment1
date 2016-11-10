@@ -15,6 +15,9 @@ public:
     explicit ATOassignmentMainWindow(QWidget *parent = 0);
     ~ATOassignmentMainWindow();
 
+private slots:
+    void on_MYOBfilebutton_clicked();
+
 private:
     Ui::ATOassignmentMainWindow *ui;
 };

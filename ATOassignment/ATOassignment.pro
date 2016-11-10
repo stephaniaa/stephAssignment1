@@ -14,9 +14,12 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         atoassignmentmainwindow.cpp \
-    myobfilecontroller.cpp
+    myobfilecontroller.cpp \
+    myoboutputdialog.cpp
 
 HEADERS  += atoassignmentmainwindow.h \
-    myobfilecontroller.h
+    myobfilecontroller.h \
+    myoboutputdialog.h
 
-FORMS    += atoassignmentmainwindow.ui
+FORMS    += atoassignmentmainwindow.ui \
+    myoboutputdialog.ui

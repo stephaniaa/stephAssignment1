@@ -13,14 +13,13 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
-#include <QtWidgets/QCheckBox>
+#include <QtWidgets/QCalendarWidget>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QToolBar>
-#include <QtWidgets/QToolButton>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -30,8 +29,7 @@ class Ui_ATOassignmentMainWindow
 public:
     QWidget *centralWidget;
     QPushButton *pushButton;
-    QToolButton *toolButton;
-    QCheckBox *checkBox;
+    QCalendarWidget *calendarWidget;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -45,17 +43,14 @@ public:
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         pushButton = new QPushButton(centralWidget);
         pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(250, 40, 75, 23));
-        toolButton = new QToolButton(centralWidget);
-        toolButton->setObjectName(QStringLiteral("toolButton"));
-        toolButton->setGeometry(QRect(120, 40, 25, 19));
-        checkBox = new QCheckBox(centralWidget);
-        checkBox->setObjectName(QStringLiteral("checkBox"));
-        checkBox->setGeometry(QRect(70, 120, 81, 20));
+        pushButton->setGeometry(QRect(300, 30, 75, 23));
+        calendarWidget = new QCalendarWidget(centralWidget);
+        calendarWidget->setObjectName(QStringLiteral("calendarWidget"));
+        calendarWidget->setGeometry(QRect(30, 20, 256, 183));
         ATOassignmentMainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(ATOassignmentMainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 400, 26));
+        menuBar->setGeometry(QRect(0, 0, 400, 21));
         ATOassignmentMainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(ATOassignmentMainWindow);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -73,8 +68,6 @@ public:
     {
         ATOassignmentMainWindow->setWindowTitle(QApplication::translate("ATOassignmentMainWindow", "ATOassignmentMainWindow", 0));
         pushButton->setText(QApplication::translate("ATOassignmentMainWindow", "PushButton", 0));
-        toolButton->setText(QApplication::translate("ATOassignmentMainWindow", "...", 0));
-        checkBox->setText(QApplication::translate("ATOassignmentMainWindow", "CheckBox", 0));
     } // retranslateUi
 
 };

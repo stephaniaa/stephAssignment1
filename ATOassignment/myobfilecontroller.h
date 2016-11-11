@@ -6,6 +6,7 @@
 #include <string>
 #include <QString>
 #include <QFileDialog>
+#include <QWidget>
 
 using namespace std;
 
@@ -14,9 +15,11 @@ class MyobFileController
 public:
     MyobFileController();
     ifstream *OpenMyobFile();
+    void setParentPtr(QWidget *parent);
 
 private:
     ifstream *Myobfilestreamptr;
+    QWidget *parentptr;
 
 };
 

@@ -15,11 +15,16 @@ TEMPLATE = app
 SOURCES += main.cpp\
         atoassignmentmainwindow.cpp \
     myobfilecontroller.cpp \
-    myoboutputdialog.cpp
+    myoboutputdialog.cpp \
+    myobtoatomaindialog.cpp \
+    myobtoatocontroller.cpp
 
 HEADERS  += atoassignmentmainwindow.h \
     myobfilecontroller.h \
-    myoboutputdialog.h
+    myoboutputdialog.h \
+    myobtoatomaindialog.h \
+    myobtoatocontroller.h
 
 FORMS    += atoassignmentmainwindow.ui \
-    myoboutputdialog.ui
+    myoboutputdialog.ui \
+    myobtoatomaindialog.ui

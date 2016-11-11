@@ -8,9 +8,11 @@ MyobFileController::MyobFileController()
 ifstream *MyobFileController::OpenMyobFile(){
 
    // QString dialogName = "Open EMPDUPE file";
-   QString fileName = QFileDialog::getOpenFileName();
+   QString fileName = QFileDialog::getOpenFileName(parentptr);
 
-
+    if(fileName.isNull()){
+        return nullptr;
+    }
 
     ifstream *fileptr = new ifstream(fileName.toLocal8Bit().constData());
 
@@ -24,4 +26,8 @@ ifstream *MyobFileController::OpenMyobFile(){
     Myobfilestreamptr = fileptr;
 
     return fileptr;
+}
+
+void MyobFileController::setParentPtr(QWidget *parent){
+    parentptr = parent;
 }

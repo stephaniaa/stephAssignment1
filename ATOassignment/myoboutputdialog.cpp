@@ -23,3 +23,4 @@ void MyobOutputDialog::displayText(){
     myobfileptr->getline(myobtext,1023);
     ui->textBrowser->setText(QString::fromUtf8(myobtext));
 }
+

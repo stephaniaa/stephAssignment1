@@ -21,6 +21,7 @@ public:
     void setFilePtr(ifstream *fileptr);
     void displayText();
 
+
 private:
     Ui::MyobOutputDialog *ui;
     ifstream *myobfileptr;

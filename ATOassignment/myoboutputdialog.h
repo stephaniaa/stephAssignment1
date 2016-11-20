@@ -11,6 +11,11 @@ namespace Ui {
 class MyobOutputDialog;
 }
 
+//! Myob output window.
+
+//! Class creates window to display Myob output which opens from MYOB
+//! to ATO main main dialog window
+
 class MyobOutputDialog : public QDialog
 {
     Q_OBJECT

@@ -10,6 +10,11 @@
 
 using namespace std;
 
+//! Open myob file.
+
+//! Class creates pointer to ifstream object to open Myob file
+
+
 class MyobFileController
 {
 public:

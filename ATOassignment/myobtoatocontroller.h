@@ -7,6 +7,11 @@
 #include <fstream>
 #include <QWidget>
 
+//! Control opening and output of files by/for user.
+
+//! Class controls opening of MYOB & ATO files and generation of output
+//! file
+
 class MYOBtoATOcontroller
 {
 public:

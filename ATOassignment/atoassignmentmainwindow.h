@@ -7,6 +7,12 @@ namespace Ui {
 class ATOassignmentMainWindow;
 }
 
+//! Main window.
+
+//! Class creates window on start of program and get user to click button
+//! to start
+
+
 class ATOassignmentMainWindow : public QMainWindow
 {
     Q_OBJECT

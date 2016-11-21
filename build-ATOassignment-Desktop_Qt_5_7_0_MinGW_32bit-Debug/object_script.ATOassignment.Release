@@ -1,0 +1,12 @@
+INPUT(
+./release\main.o
+./release\atoassignmentmainwindow.o
+./release\myobfilecontroller.o
+./release\myoboutputdialog.o
+./release\myobtoatomaindialog.o
+./release\myobtoatocontroller.o
+./release\csvfilercontroller.o
+./release\moc_atoassignmentmainwindow.o
+./release\moc_myoboutputdialog.o
+./release\moc_myobtoatomaindialog.o
+);

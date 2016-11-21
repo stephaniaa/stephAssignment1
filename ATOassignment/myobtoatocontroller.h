@@ -3,6 +3,7 @@
 
 #include "myobfilecontroller.h"
 #include "myoboutputdialog.h"
+#include "csvfilercontroller.h"
 #include <iostream>
 #include <fstream>
 #include <QWidget>
@@ -18,15 +19,18 @@ public:
     explicit MYOBtoATOcontroller();
     void setParentPtr(QWidget *parent);
     void getMyobFile();
-    void getAtoFormatFile();
+    void getCSVFile();
     void getUserInput();
     void writeOutputFile();
+
 
 private:
     ifstream *myobinputfileptr;
     ifstream *formatinputfileptr;
     ofstream *atooutputfileptr;
     QWidget *parentptr;
+    ifstream *csvfileptr;
+
 };
 
 #endif // MYOBTOATOCONTROLLER_H

@@ -1,0 +1,12 @@
+INPUT(
+./debug\main.o
+./debug\atoassignmentmainwindow.o
+./debug\myobfilecontroller.o
+./debug\myoboutputdialog.o
+./debug\myobtoatomaindialog.o
+./debug\myobtoatocontroller.o
+./debug\csvfilercontroller.o
+./debug\moc_atoassignmentmainwindow.o
+./debug\moc_myoboutputdialog.o
+./debug\moc_myobtoatomaindialog.o
+);

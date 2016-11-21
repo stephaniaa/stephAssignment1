@@ -62,7 +62,7 @@ public:
     void retranslateUi(QMainWindow *ATOassignmentMainWindow)
     {
         ATOassignmentMainWindow->setWindowTitle(QApplication::translate("ATOassignmentMainWindow", "ATOassignmentMainWindow", 0));
-        MYOBfilebutton->setText(QApplication::translate("ATOassignmentMainWindow", "Open MYOB files", 0));
+        MYOBfilebutton->setText(QApplication::translate("ATOassignmentMainWindow", "Open files", 0));
     } // retranslateUi
 
 };

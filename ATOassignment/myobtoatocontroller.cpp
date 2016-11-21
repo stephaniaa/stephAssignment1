@@ -18,7 +18,11 @@ void MYOBtoATOcontroller::getMyobFile(){
 
 }
 
-void MYOBtoATOcontroller::getAtoFormatFile(){
+void MYOBtoATOcontroller::getCSVFile(){
+
+    CSVFilerController csvfilecontroller;
+    csvfilecontroller.setParentPtr(parentptr);
+    csvfileptr = csvfilecontroller.OpenCSVFile();
 
 }
 

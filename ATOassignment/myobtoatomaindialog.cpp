@@ -22,7 +22,7 @@ void MYOBtoATOMainDialog::on_getMyobFileButton_clicked()
 
 void MYOBtoATOMainDialog::on_getAtoFileButton_clicked()
 {
-    myobtoatocontroller.getAtoFormatFile();
+    myobtoatocontroller.getCSVFile();
 }
 
 void MYOBtoATOMainDialog::on_getUserInputButton_clicked()

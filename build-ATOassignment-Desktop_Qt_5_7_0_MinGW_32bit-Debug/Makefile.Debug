@@ -432,6 +432,7 @@ debug/moc_myobtoatomaindialog.cpp: C:/Qt/5.7/mingw53_32/include/QtWidgets/QDialo
 		C:/Qt/5.7/mingw53_32/include/QtCore/qfileinfo.h \
 		C:/Qt/5.7/mingw53_32/include/QtWidgets/QWidget \
 		../ATOassignment/myoboutputdialog.h \
+		../ATOassignment/csvfilercontroller.h \
 		../ATOassignment/myobtoatomaindialog.h \
 		C:/Qt/5.7/mingw53_32/bin/moc.exe
 	C:\Qt\5.7\mingw53_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/5.7/mingw53_32/mkspecs/win32-g++ -IC:/Users/Stephanie/Documents/Coding/ATOassignment/stephAssignment1/ATOassignment -IC:/Qt/5.7/mingw53_32/include -IC:/Qt/5.7/mingw53_32/include/QtWidgets -IC:/Qt/5.7/mingw53_32/include/QtGui -IC:/Qt/5.7/mingw53_32/include/QtANGLE -IC:/Qt/5.7/mingw53_32/include/QtCore -I. -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward ..\ATOassignment\myobtoatomaindialog.h -o debug\moc_myobtoatomaindialog.cpp
@@ -728,7 +729,8 @@ debug/atoassignmentmainwindow.o: ../ATOassignment/atoassignmentmainwindow.cpp ..
 		C:/Qt/5.7/mingw53_32/include/QtWidgets/qfiledialog.h \
 		C:/Qt/5.7/mingw53_32/include/QtCore/qdir.h \
 		C:/Qt/5.7/mingw53_32/include/QtCore/qfileinfo.h \
-		../ATOassignment/myoboutputdialog.h
+		../ATOassignment/myoboutputdialog.h \
+		../ATOassignment/csvfilercontroller.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\atoassignmentmainwindow.o ..\ATOassignment\atoassignmentmainwindow.cpp
 
 debug/myobfilecontroller.o: ../ATOassignment/myobfilecontroller.cpp ../ATOassignment/myobfilecontroller.h \
@@ -1089,6 +1091,7 @@ debug/myobtoatomaindialog.o: ../ATOassignment/myobtoatomaindialog.cpp ../ATOassi
 		C:/Qt/5.7/mingw53_32/include/QtCore/qfileinfo.h \
 		C:/Qt/5.7/mingw53_32/include/QtWidgets/QWidget \
 		../ATOassignment/myoboutputdialog.h \
+		../ATOassignment/csvfilercontroller.h \
 		ui_myobtoatomaindialog.h \
 		C:/Qt/5.7/mingw53_32/include/QtCore/QVariant \
 		C:/Qt/5.7/mingw53_32/include/QtWidgets/QAction \
@@ -1235,7 +1238,8 @@ debug/myobtoatocontroller.o: ../ATOassignment/myobtoatocontroller.cpp ../ATOassi
 		C:/Qt/5.7/mingw53_32/include/QtGui/qtouchdevice.h \
 		C:/Qt/5.7/mingw53_32/include/QtWidgets/QWidget \
 		../ATOassignment/myoboutputdialog.h \
-		C:/Qt/5.7/mingw53_32/include/QtWidgets/QDialog
+		C:/Qt/5.7/mingw53_32/include/QtWidgets/QDialog \
+		../ATOassignment/csvfilercontroller.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\myobtoatocontroller.o ..\ATOassignment\myobtoatocontroller.cpp
 
 debug/csvfilercontroller.o: ../ATOassignment/csvfilercontroller.cpp ../ATOassignment/csvfilercontroller.h \

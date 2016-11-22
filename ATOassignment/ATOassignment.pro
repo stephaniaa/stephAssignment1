@@ -17,13 +17,17 @@ SOURCES += main.cpp\
     myobfilecontroller.cpp \
     myoboutputdialog.cpp \
     myobtoatomaindialog.cpp \
-    myobtoatocontroller.cpp
+    myobtoatocontroller.cpp \
+    csvfilercontroller.cpp \
+    atooutputfilecontroller.cpp
 
 HEADERS  += atoassignmentmainwindow.h \
     myobfilecontroller.h \
     myoboutputdialog.h \
     myobtoatomaindialog.h \
-    myobtoatocontroller.h
+    myobtoatocontroller.h \
+    csvfilercontroller.h \
+    atooutputfilecontroller.h
 
 FORMS    += atoassignmentmainwindow.ui \
     myoboutputdialog.ui \

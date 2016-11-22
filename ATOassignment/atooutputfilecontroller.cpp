@@ -7,8 +7,13 @@ AtoOutputFileController::AtoOutputFileController()
 
 QFile *AtoOutputFileController::AtoOutput(){
     QFile ATOfile;
-    QDir::setCurrent(" ");
-    ATOfile.setFileName("ATOoutput.txt");
+    //QString dir = QFileDialog::getExistingDirectory(parentptr, "Select directory to save ATO output",
+                                                     "/home",
+                                                    // QFileDialog::ShowDirsOnly);
+   // QDir::setCurrent(dir);
+
+
+    ATOfile.setFileName(QFileDialog::getSaveFileName(parentptr, "Select directory and name file", "/", "Text (*.txt)"));
     ATOfile.open(QIODevice::WriteOnly);
     if(!ATOfile.isOpen()){
         cout << "Could not open ATO output file" << endl;
@@ -21,4 +26,15 @@ QFile *AtoOutputFileController::AtoOutput(){
 
     return &ATOfile;
 
+}
+
+//QDir *AtoOutputFileController::UserGetOutputDir(){
+  //  return QDir::setCurrent(QFileDialog::getExistingDirectory(parentptr));
+
+//}
+
+
+
+void AtoOutputFileController::setParentPtr(QWidget *parent){
+    parentptr = parent;
 }

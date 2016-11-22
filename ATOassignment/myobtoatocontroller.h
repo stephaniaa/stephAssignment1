@@ -4,6 +4,7 @@
 #include "myobfilecontroller.h"
 #include "myoboutputdialog.h"
 #include "csvfilercontroller.h"
+#include "atooutputfilecontroller.h"
 #include <iostream>
 #include <fstream>
 #include <QWidget>

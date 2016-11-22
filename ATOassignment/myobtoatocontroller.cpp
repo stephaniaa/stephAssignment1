@@ -35,4 +35,6 @@ void MYOBtoATOcontroller::getUserInput(){
 
 void MYOBtoATOcontroller::writeOutputFile(){
 
+    AtoOutputFileController atooutputfilecontroller;
+    atooutputfilecontroller.AtoOutput();
 }

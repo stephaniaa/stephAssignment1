@@ -36,5 +36,6 @@ void MYOBtoATOcontroller::getUserInput(){
 void MYOBtoATOcontroller::writeOutputFile(){
 
     AtoOutputFileController atooutputfilecontroller;
+    atooutputfilecontroller.setParentPtr(parentptr);
     atooutputfilecontroller.AtoOutput();
 }
